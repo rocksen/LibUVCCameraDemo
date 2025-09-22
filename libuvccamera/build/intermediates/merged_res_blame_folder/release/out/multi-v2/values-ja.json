@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\workspace\\github\\LibUVCCameraDemo\\libuvccamera\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ja\\values-ja.xml",
+            "map": [
+                {
+                    "source": "D:\\workspace\\github\\LibUVCCameraDemo\\libuvccamera\\src\\main\\res\\values-ja\\strings.xml",
+                    "from": {
+                        "startLines": "25,27,26,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1091,1171,1131,1035",
+                        "endColumns": "38,52,38,54",
+                        "endOffsets": "1125,1219,1165,1085"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,94,147,186",
+                        "endColumns": "38,52,38,54",
+                        "endOffsets": "89,142,181,236"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\workspace\\github\\LibUVCCameraDemo\\libuvccamera\\build\\intermediates\\res\\merged\\release\\values-ja\\values-ja.xml",
+            "map": [
+                {
+                    "source": "D:\\workspace\\github\\LibUVCCameraDemo\\libuvccamera\\src\\main\\res\\values-ja\\strings.xml",
+                    "from": {
+                        "startLines": "25,27,26,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1091,1171,1131,1035",
+                        "endColumns": "38,52,38,54",
+                        "endOffsets": "1125,1219,1165,1085"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,94,147,186",
+                        "endColumns": "38,52,38,54",
+                        "endOffsets": "89,142,181,236"
+                    }
+                }
+            ]
+        }
+    ]
+}

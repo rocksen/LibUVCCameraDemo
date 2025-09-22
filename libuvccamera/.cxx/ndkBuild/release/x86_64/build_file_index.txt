@@ -1,0 +1,2 @@
+D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\jni\Android.mk
+D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\jni\Application.mk

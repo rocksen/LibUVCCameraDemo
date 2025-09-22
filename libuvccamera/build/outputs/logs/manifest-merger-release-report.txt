@@ -1,0 +1,47 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:24:1-37:12
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:24:1-37:12
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:24:1-37:12
+	package
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:25:5-40
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:27:5-30
+	xmlns:android
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:24:11-69
+	android:versionCode
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:26:5-28
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:28:5-78
+	android:name
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:28:22-75
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:29:5-71
+	android:name
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:29:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:30:22-78
+uses-sdk
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:31:5-33:41
+	android:targetSdkVersion
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:33:9-38
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:32:9-35
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml
+application
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:34:5-36:19
+service#com.serenegiant.service.TakeVideoService
+ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:35:9-84
+	android:name
+		ADDED from D:\workspace\github\LibUVCCameraDemo\libuvccamera\src\main\AndroidManifest.xml:35:18-73

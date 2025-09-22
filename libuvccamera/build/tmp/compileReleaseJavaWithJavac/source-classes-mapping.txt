@@ -1,0 +1,160 @@
+com/serenegiant/service/TakeVideoService.java
+ com.serenegiant.service.TakeVideoService
+ com.serenegiant.service.TakeVideoService$1
+ com.serenegiant.service.TakeVideoService$2
+ com.serenegiant.service.TakeVideoService$3
+com/serenegiant/glutils/EglTask.java
+ com.serenegiant.glutils.EglTask
+com/serenegiant/glutils/EGLBase14.java
+ com.serenegiant.glutils.EGLBase14
+ com.serenegiant.glutils.EGLBase14$1
+ com.serenegiant.glutils.EGLBase14$Config
+ com.serenegiant.glutils.EGLBase14$Context
+ com.serenegiant.glutils.EGLBase14$EglSurface
+com/serenegiant/proxy/USBMonitorProxy.java
+ com.serenegiant.proxy.USBMonitorProxy
+ com.serenegiant.proxy.USBMonitorProxy$1
+ com.serenegiant.proxy.USBMonitorProxy$2
+ com.serenegiant.proxy.USBMonitorProxy$3
+ com.serenegiant.proxy.USBMonitorProxy$3$1
+ com.serenegiant.proxy.USBMonitorProxy$3$2
+ com.serenegiant.proxy.USBMonitorProxy$4
+com/serenegiant/usbcameracommon/AbstractUVCCameraHandler.java
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraCallback
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread$1
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread$2
+com/serenegiant/glutils/EGLBase.java
+ com.serenegiant.glutils.EGLBase
+ com.serenegiant.glutils.EGLBase$IConfig
+ com.serenegiant.glutils.EGLBase$IContext
+ com.serenegiant.glutils.EGLBase$IEglSurface
+com/serenegiant/encoder/MediaVideoBufferEncoder.java
+ com.serenegiant.encoder.MediaVideoBufferEncoder
+com/serenegiant/widget/AspectRatioTextureView.java
+ com.serenegiant.widget.AspectRatioTextureView
+com/serenegiant/utils/FpsCounter.java
+ com.serenegiant.utils.FpsCounter
+com/serenegiant/widget/CameraViewInterface.java
+ com.serenegiant.widget.CameraViewInterface
+ com.serenegiant.widget.CameraViewInterface$Callback
+com/serenegiant/glutils/IRendererHolder.java
+ com.serenegiant.glutils.IRendererHolder
+com/serenegiant/glutils/ITexture.java
+ com.serenegiant.glutils.ITexture
+com/serenegiant/encoder/MediaSurfaceEncoder.java
+ com.serenegiant.encoder.MediaSurfaceEncoder
+com/serenegiant/encoder/MediaEncoder.java
+ com.serenegiant.encoder.MediaEncoder
+ com.serenegiant.encoder.MediaEncoder$MediaEncoderListener
+com/serenegiant/glutils/es1/GLHelper.java
+ com.serenegiant.glutils.es1.GLHelper
+com/serenegiant/usb/IStatusCallback.java
+ com.serenegiant.usb.IStatusCallback
+com/serenegiant/utils/BuildCheck.java
+ com.serenegiant.utils.BuildCheck
+com/serenegiant/glutils/RenderHandler.java
+ com.serenegiant.glutils.RenderHandler
+ com.serenegiant.glutils.RenderHandler$1
+ com.serenegiant.glutils.RenderHandler$ContextParams
+ com.serenegiant.glutils.RenderHandler$RenderThread
+com/serenegiant/proxy/USBDeviceNameCallback.java
+ com.serenegiant.proxy.USBDeviceNameCallback
+com/serenegiant/glutils/RendererHolder.java
+ com.serenegiant.glutils.RendererHolder
+ com.serenegiant.glutils.RendererHolder$1
+ com.serenegiant.glutils.RendererHolder$RendererTask
+ com.serenegiant.glutils.RendererHolder$RendererTask$1
+com/serenegiant/utils/HandlerThreadHandler.java
+ com.serenegiant.utils.HandlerThreadHandler
+com/serenegiant/usb/UVCCamera.java
+ com.serenegiant.usb.UVCCamera
+com/serenegiant/proxy/VideoPathCallback.java
+ com.serenegiant.proxy.VideoPathCallback
+com/serenegiant/encoder/IAudioEncoder.java
+ com.serenegiant.encoder.IAudioEncoder
+com/serenegiant/encoder/MediaVideoEncoder.java
+ com.serenegiant.encoder.MediaVideoEncoder
+com/serenegiant/glutils/RendererSurfaceRec.java
+ com.serenegiant.glutils.RendererSurfaceRec
+ com.serenegiant.glutils.RendererSurfaceRec$1
+ com.serenegiant.glutils.RendererSurfaceRec$RendererSurfaceRecHasWait
+com/serenegiant/usb/IButtonCallback.java
+ com.serenegiant.usb.IButtonCallback
+com/serenegiant/utils/PermissionCheck.java
+ com.serenegiant.utils.PermissionCheck
+com/serenegiant/proxy/IUSBMonitor.java
+ com.serenegiant.proxy.IUSBMonitor
+com/serenegiant/glutils/GLDrawer2D.java
+ com.serenegiant.glutils.GLDrawer2D
+com/serenegiant/usb/USBVendorId.java
+ com.serenegiant.usb.USBVendorId
+com/serenegiant/widget/IAspectRatioView.java
+ com.serenegiant.widget.IAspectRatioView
+com/serenegiant/glutils/IRendererCommon.java
+ com.serenegiant.glutils.IRendererCommon
+ com.serenegiant.glutils.IRendererCommon$MirrorMode
+com/serenegiant/usbcameracommon/UVCCameraHandler.java
+ com.serenegiant.usbcameracommon.UVCCameraHandler
+com/serenegiant/usb/USBMonitor.java
+ com.serenegiant.usb.USBMonitor
+ com.serenegiant.usb.USBMonitor$1
+ com.serenegiant.usb.USBMonitor$2
+ com.serenegiant.usb.USBMonitor$2$1
+ com.serenegiant.usb.USBMonitor$3
+ com.serenegiant.usb.USBMonitor$4
+ com.serenegiant.usb.USBMonitor$5
+ com.serenegiant.usb.USBMonitor$6
+ com.serenegiant.usb.USBMonitor$OnDeviceConnectListener
+ com.serenegiant.usb.USBMonitor$UsbControlBlock
+ com.serenegiant.usb.USBMonitor$UsbDeviceInfo
+com/serenegiant/glutils/MessageTask.java
+ com.serenegiant.glutils.MessageTask
+ com.serenegiant.glutils.MessageTask$1
+ com.serenegiant.glutils.MessageTask$Request
+ com.serenegiant.glutils.MessageTask$TaskBreak
+com/serenegiant/usb/IFrameCallback.java
+ com.serenegiant.usb.IFrameCallback
+com/serenegiant/widget/UVCCameraTextureView.java
+ com.serenegiant.widget.UVCCameraTextureView
+ com.serenegiant.widget.UVCCameraTextureView$1
+ com.serenegiant.widget.UVCCameraTextureView$RenderHandler
+ com.serenegiant.widget.UVCCameraTextureView$RenderHandler$RenderThread
+com/serenegiant/utils/AssetsHelper.java
+ com.serenegiant.utils.AssetsHelper
+com/serenegiant/glutils/IDrawer2D.java
+ com.serenegiant.glutils.IDrawer2D
+com/serenegiant/uvccamera/BuildConfig.java
+ com.serenegiant.uvccamera.BuildConfig
+com/serenegiant/glutils/IDrawer2dES2.java
+ com.serenegiant.glutils.IDrawer2dES2
+com/serenegiant/usbcameracommon/UVCCameraHandlerMultiSurface.java
+ com.serenegiant.usbcameracommon.UVCCameraHandlerMultiSurface
+ com.serenegiant.usbcameracommon.UVCCameraHandlerMultiSurface$1
+com/serenegiant/glutils/GLHelper.java
+ com.serenegiant.glutils.GLHelper
+com/serenegiant/usb/DeviceFilter.java
+ com.serenegiant.usb.DeviceFilter
+com/serenegiant/encoder/MediaAudioEncoder.java
+ com.serenegiant.encoder.MediaAudioEncoder
+ com.serenegiant.encoder.MediaAudioEncoder$1
+ com.serenegiant.encoder.MediaAudioEncoder$AudioThread
+com/serenegiant/glutils/TextureOffscreen.java
+ com.serenegiant.glutils.TextureOffscreen
+com/serenegiant/glutils/RenderHolderCallback.java
+ com.serenegiant.glutils.RenderHolderCallback
+com/serenegiant/encoder/MediaMuxerWrapper.java
+ com.serenegiant.encoder.MediaMuxerWrapper
+com/serenegiant/glutils/EGLBase10.java
+ com.serenegiant.glutils.EGLBase10
+ com.serenegiant.glutils.EGLBase10$1
+ com.serenegiant.glutils.EGLBase10$Config
+ com.serenegiant.glutils.EGLBase10$Context
+ com.serenegiant.glutils.EGLBase10$EglSurface
+ com.serenegiant.glutils.EGLBase10$MySurfaceHolder
+com/serenegiant/encoder/IVideoEncoder.java
+ com.serenegiant.encoder.IVideoEncoder
+com/serenegiant/usb/Size.java
+ com.serenegiant.usb.Size
+ com.serenegiant.usb.Size$1

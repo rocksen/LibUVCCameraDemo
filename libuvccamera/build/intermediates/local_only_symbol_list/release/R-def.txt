@@ -1,0 +1,15 @@
+R_DEF: Internal format may change without notice
+local
+dimen button_size
+dimen horizontal_margin
+dimen list_font_size
+dimen list_height_min
+dimen vertical_margin
+id name_text
+layout listitem_device
+raw camera_click
+string camera
+string no_device
+string refresh
+string select
+xml device_filter

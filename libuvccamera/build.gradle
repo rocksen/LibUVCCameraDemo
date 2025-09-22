@@ -1,5 +1,77 @@
 apply plugin: 'com.android.library'
 
+// 定义拷贝so库的任务
+task copyNativeLibsToJniLibs {
+	description = '拷贝编译生成的so库文件到libs目录'
+	group = 'build'
+	
+	doLast {
+		def sourceDir = "$buildDir/intermediates/ndkBuild/release/obj/local"
+		def targetDir = "$projectDir/src/main/libs"
+		
+		println "=== 开始拷贝so库文件 ==="
+		println "源目录: $sourceDir"
+		println "目标目录: $targetDir"
+		
+		// 确保目标目录存在
+		file(targetDir).mkdirs()
+		
+		// 支持的CPU架构列表
+		def abis = ['armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64']
+		def totalCopied = 0
+		
+		abis.each { abi ->
+			def sourceAbiDir = file("$sourceDir/$abi")
+			def targetAbiDir = file("$targetDir/$abi")
+			
+			println "\n处理架构: $abi"
+			
+			if (sourceAbiDir.exists()) {
+				// 确保目标架构目录存在
+				targetAbiDir.mkdirs()
+				
+				// 清理目标目录中的旧.so文件
+				targetAbiDir.listFiles()?.each { oldFile ->
+					if (oldFile.name.endsWith('.so')) {
+						oldFile.delete()
+						println "  已删除旧文件: $oldFile.name"
+					}
+				}
+				
+				// 拷贝所有.so文件
+				def copiedInThisAbi = 0
+				sourceAbiDir.listFiles().each { file ->
+					if (file.name.endsWith('.so')) {
+						def targetFile = new File(targetAbiDir, file.name)
+						copy {
+							from file
+							into targetAbiDir
+						}
+						println "  ✓ 拷贝: $file.name (大小: ${(file.length()/1024).intValue()}KB)"
+						copiedInThisAbi++
+						totalCopied++
+					}
+				}
+				println "  $abi: 拷贝了 $copiedInThisAbi 个文件"
+			} else {
+				println "  警告: 源目录不存在 - $sourceAbiDir.absolutePath"
+			}
+		}
+		
+		println "\n=== so库拷贝任务完成！总共拷贝 $totalCopied 个文件 ==="
+		
+		// 显示最终的libs目录结构
+		println "\n最终libs目录结构:"
+		abis.each { abi ->
+			def abiDir = file("$targetDir/$abi")
+			if (abiDir.exists()) {
+				def soFiles = abiDir.listFiles().findAll { it.name.endsWith('.so') }
+				println "  $abi: ${soFiles.size()}个文件 - ${soFiles.collect{it.name}.join(', ')}"
+			}
+		}
+	}
+}
+
 android {
 	compileSdkVersion 25
 	buildToolsVersion '25.0.2'
@@ -22,10 +94,28 @@ android {
     }
 	sourceSets {
 		main {
-			jniLibs.srcDirs = ['src/main/libs']
-			jni.srcDirs = []
+			jni.srcDirs = ['src/main/jni']
 		}
 	}
+
+	externalNativeBuild {
+		ndkBuild {
+			path file('src/main/jni/Android.mk')
+		}
+	}
+
+	defaultConfig {
+        minSdkVersion 19
+		targetSdkVersion 25
+		ndk {
+			abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+		}
+		externalNativeBuild {
+			ndkBuild {
+				arguments 'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+			}
+		}
+    }
 }
 
 dependencies {
@@ -34,4 +124,31 @@ dependencies {
 		exclude group: 'com.android.support', module: 'support-annotations'
 	})
     compile 'com.android.support:support-annotations:25.3.1'
+}
+
+// 设置任务依赖关系
+afterEvaluate {
+	// 直接获取任务并设置依赖关系
+	def externalNativeBuildReleaseTask = tasks.findByName('externalNativeBuildRelease')
+	if (externalNativeBuildReleaseTask) {
+		externalNativeBuildReleaseTask.finalizedBy copyNativeLibsToJniLibs
+		println "已配置自动拷贝: externalNativeBuildRelease -> copyNativeLibsToJniLibs"
+	}
+	
+	// AAR打包任务也添加依赖
+	def bundleReleaseAarTask = tasks.findByName('bundleReleaseAar')
+	if (bundleReleaseAarTask) {
+		bundleReleaseAarTask.dependsOn copyNativeLibsToJniLibs
+		println "已配置AAR打包依赖: bundleReleaseAar depends on copyNativeLibsToJniLibs"
+	}
+	
+	// 确保拷贝任务在原生编译之后执行
+	copyNativeLibsToJniLibs.mustRunAfter 'externalNativeBuildRelease'
+	
+	// 可选：debug版本（可取消注释）
+	// def externalNativeBuildDebugTask = tasks.findByName('externalNativeBuildDebug')
+	// if (externalNativeBuildDebugTask) {
+	//     externalNativeBuildDebugTask.finalizedBy copyNativeLibsToJniLibs
+	//     println "已配置自动拷贝: externalNativeBuildDebug -> copyNativeLibsToJniLibs"
+	// }
 }
